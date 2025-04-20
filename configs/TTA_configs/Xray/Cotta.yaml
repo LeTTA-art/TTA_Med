@@ -1,0 +1,13 @@
+includes:
+  - base.yaml
+atta:
+  name: Cotta
+  episodic: False
+  batch_size: 64
+  Cotta:
+    steps: 1
+    lr: 1e-4
+num_workers: 4
+log_file: Cotta
+
+

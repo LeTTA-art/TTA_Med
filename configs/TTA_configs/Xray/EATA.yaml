@@ -1,0 +1,18 @@
+includes:
+  - base.yaml
+atta:
+  name: EATA
+  episodic: False
+  batch_size: 100
+  budgets: 400
+  EATA:
+    steps: 1
+    lr: 1e-4
+    relax: 2
+    d_margin: 0.5
+    al_rate: 1e-2
+    fisher_alpha: 2000.0
+num_workers: 4
+log_file: EATA
+
+

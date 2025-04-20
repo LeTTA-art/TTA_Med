@@ -1,0 +1,17 @@
+includes:
+  - base.yaml
+atta:
+  name: Random
+  episodic: False
+  budgets: 400
+  batch_size: 100
+  Random:
+    steps: 30
+    lr: 1e-4
+    eh: 0.2
+    el: 1e-3
+    al_rate: 0.05
+num_workers: 4
+log_file: random
+
+

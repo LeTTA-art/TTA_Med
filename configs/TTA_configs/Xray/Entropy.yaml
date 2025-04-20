@@ -1,0 +1,21 @@
+includes:
+  - base.yaml
+atta:
+  name: Entropy
+  episodic: False
+  budgets: 400
+  batch_size: 100
+  SimATTA:
+    steps: 30
+    lr: 1e-3
+    eh: 0.5
+    el: 1e-5
+    cold_start: 100
+    nc_increase: 1
+    beta: 0
+    stop_tol: 5
+    target_cluster: 1
+    LE: 1
+num_workers: 4
+log_file: entropy
+
