@@ -1,0 +1,18 @@
+includes:
+  - base.yaml
+atta:
+  name: Coreset
+  episodic: False
+  batch_size: 100
+  budgets: 400
+  Coreset:
+    steps: 1
+    pre: 1
+    lr: 1e-4
+    d_margin: 0.5
+    al_rate: 1e-2
+    fisher_alpha: 2000.0
+num_workers: 4
+log_file: Coreset
+
+
