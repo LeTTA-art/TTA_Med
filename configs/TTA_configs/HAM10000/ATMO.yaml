@@ -1,0 +1,23 @@
+includes:
+  - base.yaml
+atta:
+  name: ATMO
+  episodic: False
+  budgets: 400
+  batch_size: 100
+  SimATTA:
+    steps: 30
+    lr: 1e-4
+    eh: 1e-4
+    el: 1e-5
+    begin: 1.0
+    beli_k: 3
+    s_k: 3
+    cold_start: 100
+    nc_increase: 1
+    beta: 0
+    stop_tol: 5
+    target_cluster: 1
+    LE: 1
+num_workers: 4
+log_file: ATMO
